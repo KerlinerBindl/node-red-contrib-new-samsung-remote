@@ -3,9 +3,10 @@ module.exports = function (RED) {
     function LowerCaseNode(config) {
 
         RED.nodes.createNode(this, config);
+        this.ip = config.ip;
         var node = this;
         node.on('input', function (msg) {
-            msg.payload = msg.payload.toLowerCase();
+            msg.payload = node.ip + msg.payload.toLowerCase();
             node.send(msg);
         });
     }
