@@ -4,9 +4,10 @@ module.exports = function (RED) {
 
         RED.nodes.createNode(this, config);
         this.prefix = config.prefix;
+        this.ip = config.ip;
         var node = this;
         node.on('input', function (msg) {
-            msg.payload = node.prefix + msg.payload.toLowerCase();
+            msg.payload = node.prefix + node.ip + msg.payload.toLowerCase();
             node.send(msg);
         });
     }
