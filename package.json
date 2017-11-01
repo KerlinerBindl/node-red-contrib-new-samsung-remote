@@ -1,10 +1,11 @@
 {
   "name": "node-red-contrib-new-samsung-remote",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "Connect to Samsung Smart TV",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "node-red": {
+    "nodes": {
+      "new-samsung-remote": "new-samsung-remote/new-samsung-remote.js"
+    }
   },
   "repository": {
     "type": "git",
@@ -12,7 +13,8 @@
   },
   "keywords": [
     "Samsung",
-    "Remote"
+    "Remote",
+    "node-red"
   ],
   "author": "Thorsten Maass",
   "license": "ISC",
