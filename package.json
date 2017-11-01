@@ -2,10 +2,11 @@
   "name": "node-red-contrib-new-samsung-remote",
   "version": "0.0.1",
   "description": "Connect to Samsung Smart TV",
+  "dependencies": {
+    },
   "node-red": {
     "nodes": {
-      "new-samsung-remote": "new-samsung-remote/new-samsung-remote.js",
-      "new-samsung-remote": "new-samsung-remote/remote-server.js"
+      "new-samsung-remote": "new-samsung-remote/new-samsung-remote.js"
     }
   },
   "repository": {
