@@ -4,7 +4,8 @@
   "description": "Connect to Samsung Smart TV",
   "node-red": {
     "nodes": {
-      "new-samsung-remote": "new-samsung-remote/new-samsung-remote.js"
+      "new-samsung-remote": "new-samsung-remote/new-samsung-remote.js",
+      "new-samsung-remote": "new-samsung-remote/remote-server.js"
     }
   },
   "repository": {
